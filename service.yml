@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: wolke7
+  name: wolke7-connector-service
+spec:
+  ports:
+    - name: http
+      port: 8080
+  selector:
+    app: wolke7-connector
